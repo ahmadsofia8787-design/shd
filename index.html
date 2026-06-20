@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Informasi & Review</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; height: 100vh; }
+        nav { background: #333; color: white; padding: 1rem; display: flex; gap: 20px; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropbtn { color: white; cursor: pointer; padding: 10px; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 250px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; }
+        .dropdown-content a:hover { background-color: #ddd; }
+        .dropdown:hover .dropdown-content { display: block; }
+        iframe { flex-grow: 1; border: none; width: 100%; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="dropdown">
+            <span class="dropbtn">Buku: Solidaritas Hadits ▼</span>
+            <div class="dropdown-content">
+                <a href="cover.html" target="contentFrame">Cover</a>
+                <a href="bab1.html" target="contentFrame">BAB I</a>
+                <a href="bab1_pengertian.html" target="contentFrame">A. Pengertian Solidaritas</a>
+                <a href="bab1_bentuk.html" target="contentFrame">B. Bentuk-Bentuk Solidaritas</a>
+                <a href="bab1_dampak.html" target="contentFrame">C. Dampak Sosial & Spiritual</a>
+                <a href="daftar_pustaka.html" target="contentFrame">Daftar Pustaka</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span class="dropbtn">Review Website (PDF) ▼</span>
+            <div class="dropdown-content">
+              <a href="https://drive.google.com/file/d/1abK90UmnzSqBv3khrjsXLyoK1DdqgVmD/view?usp=drivesdk" target="contentFrame">Review Website 1</a>
+              <a href="https://drive.google.com/file/d/1toAd4btzLEQuqU5tvByEHCl1g7iT_rI6/view?usp=drivesdk" target="contentFrame">Review Website 2</a>
+              <a href="https://drive.google.com/file/d/1o0y9gOi1rPYnD_TsiXiE0ElGBAjlkA4A/view?usp=drivesdk" target="contentFrame">Review Website 3</a>
+              <a href="https://drive.google.com/file/d/17gKNKL-gLCnF95kMljtNtFAcjmEaoqi0/view?usp=drivesdk" target="contentFrame">Review Website 4</a>
+              <a href="https://drive.google.com/file/d/1JHxs4hTzih_1qh9BT-G8u28xYIg-gZj5/view?usp=drivesdk" target="contentFrame">Review Website 5</a>
+              <a href="https://drive.google.com/drive/folders/1m8mphal8VOdUBBN3UgUBq8M244ElbYzs" target="contentFrame">Review Website 6</a>
+            </div>
+        </div>
+    </nav>
+    <iframe name="contentFrame" src="cover.html"></iframe>
+</body>
+</html>
